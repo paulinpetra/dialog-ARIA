@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <button id="menuButton" aria-label="Open Menu">
+      <i class="bx bx-menu"></i>
+    </button>
+    <nav class="nav" id="menuContent" aria-label="Main Navigation"></nav>>
+      <ul>
+        <li><a href="#">Hem</a></li>
+        <li><a href="#">Om oss</a></li>
+        <li><a href="#">Tjänster</a></li>
+        <li><a href="#">Kontakt</a></li>
+      </ul>
+    </nav>
+
+    <button class="open-btn" aria-label="Open">Open modal</button>
+
+    <!-- Dialog are used to enhance usability by focusing attention on a specific message that requires a user action to continue.-->
+    <dialog
+      open
+      id="accessibleDialog"
+      class="modal"
+      aria-labelledby="dialogTitle"
+    >
+      <h2 id="dialogTitle">
+        Exempel på tillgängligt modalfönster med &lt;dialog&gt;
+      </h2>
+      <p>Här är innehållet i modalfönstret.</p>
+      <button class="close-btn" id="closeDialogBtn" aria-label="Close">
+        Close
+      </button>
+    </dialog>
+
+    <script src="index.js"></script>
+  </body>
+</html>
